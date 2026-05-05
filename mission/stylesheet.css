@@ -42,3 +42,56 @@ img {
     width: 175px;
     height: auto;
 }
+
+
+
+#confetti-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+.confetti-piece {
+    position: absolute;
+    /* Start at bottom center */
+    bottom: 0;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    opacity: 0;
+}
+
+@keyframes confetti-burst {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        /* Quick fade in during the launch */
+        opacity: 1;
+    }
+    25% {
+        /* REACHING THE PEAK: Fast upward blast */
+        opacity: 1;
+        transform: translate(var(--x-spread), var(--pop-height)) rotate(180deg);
+    }
+    100% {
+        /* THE SLOW DRIFT: Most of the animation time is spent here */
+        opacity: 0;
+        /* Fall much further (120vh) and keep spreading outward */
+        transform: translate(calc(var(--x-spread) * 1.5), 120vh) rotate(var(--rotation));
+    }
+}
+
+.confetti-piece {
+    position: absolute;
+    top: 100%; /* Start at the very bottom */
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    opacity: 0;
+}
