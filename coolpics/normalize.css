@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Varela Round", sans-serif;
+    letter-spacing: 2px;
+}
+
+/* Header and contents */
+header {
+    padding: 10px;
+    background: #2b78e4;
+    text-align: center;
+}
+h1, a {
+    color: white;
+}
+h1 {
+    padding: 40px 0px 15px 0px;
+}
+#main-btn {
+    color: white;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+nav {
+    display: none;
+}
+nav, a {
+    word-spacing: 10px;
+}
+
+/* Body and text */
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    background: darkgray;
+}
+#currentWork {
+    padding: 20px 0px 10px 0px;
+    text-align: center;
+}
+
+/* Images */
+img {
+    display: grid;
+    justify-self: center;
+    align-self: center;
+    margin: 15px 15px 15px 15px;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: 10px solid white;
+    box-shadow: 10px 10px 15px  rgba(0, 0, 0, 0.2);
+}
+
+/* Footer and contents */
+footer {
+    margin: 0px;
+    padding: 5px;
+    text-align: center;
+    color: white;
+    background: #2b78e4;
+}
+
+/* Screen manipulation changes */
+@media screen and (min-width: 768px) {
+    main {
+    grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (min-width: 1366px) {
+    main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    }
+    nav {
+        display: inline;
+    }
+    #main-btn {
+        display: none;
+    }
+}
