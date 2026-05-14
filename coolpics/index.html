@@ -4,40 +4,46 @@
     <meta charset="UTF-8">
     <title>Cool Pics</title>
     <link rel="stylesheet" href="normalize.css">
-    <meta name ="description" content="Cool Pics">
+    <link rel="stylesheet" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Joshua Seth Jones">
 </head>
 <body>
     <header>
         <h1>Cool Pics 📷</h1>
-    <button id="main-btn">
-        <h2>Main</h2>
-    </button>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">People</a>
-        <a href="#">Places</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-    </nav>
+        <button id="main-btn">Menu</button>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">People</a>
+            <a href="#">Places</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
     </header>
-    <div>
-        <h2 id="currentWork">Current Work</h2>
-    </div>
-    <main>
-        <img src="cool-pics.jpg" alt="cool-pics">
-        <img src="cool-pics.jpg" alt="cool-pics">
-        <img src="cool-pics.jpg" alt="cool-pics">
-        <img src="cool-pics.jpg" alt="cool-pics">
-        <img src="cool-pics.jpg" alt="cool-pics">
-        <img src="cool-pics.jpg" alt="cool-pics">
-        <img src="cool-pics.jpg" alt="cool-pics">
-        <img src="cool-pics.jpg" alt="cool-pics">
-        <img src="cool-pics.jpg" alt="cool-pics">
-    </main>
-</body>
-<div>
+
+    <h2 id="currentWork">Current Work</h2>
+
+    <main class="gallery">
+        <figure><img src="norris-sm.jpg" alt="cool-pics"></figure>
+        <figure><img src="norris-sm.jpg" alt="cool-pics"></figure>
+        <figure><img src="norris-sm.jpg" alt="cool-pics"></figure>
+        <figure><img src="norris-sm.jpg" alt="cool-pics"></figure>
+        <figure><img src="norris-sm.jpg" alt="cool-pics"></figure>
+        <figure><img src="norris-sm.jpg" alt="cool-pics"></figure>
+        <figure><img src="norris-sm.jpg" alt="cool-pics"></figure>
+        <figure><img src="norris-sm.jpg" alt="cool-pics"></figure>
+        <figure><img src="norris-sm.jpg" alt="cool-pics"></figure>
+    </main>tagz
+
+    <dialog id="modal">
+        <div class="viewer">
+            <button class="close-viewer">X</button>
+            <img src="" alt="Full size view">
+        </div>
+    </dialog>
+
     <footer>©2025 Not a real site</footer>
-</div>
+
+    <script src="cool-pics.js"></script>
+</body>
 </html>

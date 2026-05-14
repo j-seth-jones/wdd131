@@ -1,86 +1,117 @@
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: "Varela Round", sans-serif;
-    letter-spacing: 2px;
+}
+body {
+    background: darkgray;
 }
 
-/* Header and contents */
+/* Header & Nav */
 header {
-    padding: 10px;
+    padding: 20px;
     background: #2b78e4;
     text-align: center;
-}
-h1, a {
     color: white;
 }
-h1 {
-    padding: 40px 0px 15px 0px;
-}
 #main-btn {
+    font-size: 25px;
     color: white;
     cursor: pointer;
     border: none;
-    background-color: transparent;
+    background: transparent;
+    padding: 5px 10px;
+    margin-top: 10px;
 }
 nav {
     display: none;
+    margin-top: 15px;
 }
-nav, a {
-    word-spacing: 20px;
+nav a {
+    color: white;
+    margin: 0 10px;
+}
+nav.show {
+    display: block;
 }
 
-/* Body and text */
-body {
-    display: grid;
-    grid-template-columns: 1fr;
-    background: darkgray;
-}
+/* Gallery Grid */
 #currentWork {
-    padding: 20px 0px 10px 0px;
+    padding: 20px;
     text-align: center;
 }
-
-/* Images */
-img {
+.gallery {
     display: grid;
-    justify-self: center;
-    align-self: center;
-    margin: 15px 15px 15px 15px;
-    width: 300px;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.gallery figure img {
+    width: 100%;
+    max-width: 300px;
     height: 300px;
     object-fit: cover;
     border: 10px solid white;
-    box-shadow: 10px 10px 15px  rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
 }
 
-/* Footer and contents */
+/* Modal */
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+dialog {
+    border: none;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    max-width: 100vw;
+    max-height: 100vh;
+}
+.viewer {
+    position: relative;
+    width: fit-content;
+    margin: 10vh auto;
+}
+.viewer img {
+    display: block;
+    max-width: 90vw;
+    max-height: 80vh;
+
+}
+.close-viewer {
+    position: absolute;
+    top: -25px;
+    right: -35px;
+    padding: 5px 10px;
+    background: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Footer */
 footer {
-    margin: 0px;
-    padding: 5px;
+    padding: 20px;
     text-align: center;
-    color: white;
     background: #2b78e4;
+    color: white;
 }
 
-/* Screen manipulation changes */
+/* Media Queries */
 @media screen and (min-width: 768px) {
-    main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    }
+    .gallery { grid-template-columns: 1fr 1fr; }
 }
+
 @media screen and (min-width: 1366px) {
-    main {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    }
-    nav {
-        display: inline;
-    }
-    #main-btn {
-        display: none;
-    }
+    .gallery { grid-template-columns: 1fr 1fr 1fr; }
+    nav { display: block; }
+    #main-btn { display: none; }
 }
