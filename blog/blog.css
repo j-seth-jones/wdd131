@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+/* Fonts and colors */
+#title {
+    font-family: 'Arvo', serif;
+    color: darkmagenta;
+    justify-self: center;
+    padding: 20px;
+}
+hr {
+    border-color: gold;
+}
+nav {
+    padding: 15px;
+}
+nav,  #bookTitle {
+    color: darkred;
+}
+#bookTitle {
+    font-family: 'Arvo', serif;
+}
+#date {
+    font-style: italic;
+}
+
+/* Positioning */
+#navOptions {
+    display: flex;
+    justify-self: right;
+    padding-right: 15px;
+    gap: 50px;
+}
+.hr2 {
+    margin-top: 45px; 
+
+}
+li {
+    padding: 5px;
+    list-style-type: none;
+}
+#bookName {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 120px 30px 1fr 40px;
+    padding: 15px;
+}
+#bookInfo {
+    grid-column: 7 / 8;
+    grid-row: 1 / 2;
+    text-align: right;
+}
+h2 {
+    grid-column: 1 / 6;
+    grid-row: 2 / 3;
+    padding: 5px;
+}
+.hr3 {
+    display: none;
+}
+#commentary {
+    font-size: 20px;
+    grid-column: 1 / 5;
+    grid-row: 4 / 5;
+}
+img {
+    grid-column: 2 / 5;
+    grid-row: 3 / 4;
+    padding: 5px;
+}
+footer {
+    justify-self: center;
+    padding: 15px;
+}
+
+/* Media queries */
+@media (min-width: 1000px) {
+    #bookName {
+        display: grid;
+        grid-template-columns: 2fr 10em 1fr 1fr;
+    }
+    h2, img, #commentary {
+        border-left: 1px solid gold;
+    }
+    #bookInfo {
+        grid-column: 1 / 2;
+        grid-row: 2 / 2;
+        justify-self: right;
+        padding-right: 20px;
+    }
+    .hr2 {
+        display: none;
+    }
+    .hr3 {
+        grid-template-columns: 2 /3;
+        grid-template-rows: 2 / 3;
+    }
+    h2 {
+        grid-column: 2 / 6;
+        grid-row: 2 / 3;
+        padding: 5px;
+        padding-left: 20px;
+    }
+    #commentary {
+        grid-column: 2 / 5;
+        grid-row: 4 / 5;
+        padding-left: 20px;
+    }
+    img {
+        grid-column: 2 / 5;
+        grid-row: 3 / 4;
+        padding: 5px;
+        padding-left: 10em;
+    }
+}
