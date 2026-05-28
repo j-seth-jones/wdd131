@@ -100,7 +100,6 @@ const articles = [
 
         const card = `
         <article class="book">
-            <hr>
             <div id="bookName">
             <ul id="bookInfo">
                 <li id="date">${book.date}</li>
