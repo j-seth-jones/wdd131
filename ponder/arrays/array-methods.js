@@ -76,6 +76,5 @@ let classroom = [
     { name: "Kaladin", grade: "B" },
     { name: "Eowyn", grade: "A" }
 ];
-
 console.log(classroom[1].name);
 
