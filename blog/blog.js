@@ -98,9 +98,6 @@ const articles = [
 
     articles.forEach(book => {
 
-        // Display a book card for each book object in the array
-
-        // 1. Building HTML for the card
         const card = `
         <article class="book">
             <hr>
@@ -119,6 +116,5 @@ const articles = [
         </article>
         `;
 
-        // 2. Putting that HTML on the page
         document.getElementById("book-list").innerHTML += card;
     });
