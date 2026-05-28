@@ -45,7 +45,7 @@ li {
 #bookName {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 120px 30px 1fr 40px;
+
     padding: 15px;
 }
 #bookInfo {
