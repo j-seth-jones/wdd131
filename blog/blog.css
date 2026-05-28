@@ -33,7 +33,7 @@ nav,  #bookTitle {
     justify-self: right;
     padding-right: 15px;
     gap: 50px;
-}
+} 
 .hr2 {
     margin-top: 45px; 
 
@@ -79,14 +79,14 @@ footer {
 @media (min-width: 1000px) {
     #bookName {
         display: grid;
-        grid-template-columns: 2fr 10em 1fr 1fr;
+        grid-template-columns: 1fr 10em 1fr 0.5fr;
     }
     h2, img, #commentary {
         border-left: 1px solid gold;
     }
     #bookInfo {
         grid-column: 1 / 2;
-        grid-row: 2 / 2;
+        grid-row: 2 / 3;
         justify-self: right;
         padding-right: 20px;
     }
@@ -100,11 +100,12 @@ footer {
     h2 {
         grid-column: 2 / 6;
         grid-row: 2 / 3;
+        align-content: center;
         padding: 5px;
         padding-left: 20px;
     }
     #commentary {
-        grid-column: 2 / 5;
+        grid-column: 2 / 4;
         grid-row: 4 / 5;
         padding-left: 20px;
     }
