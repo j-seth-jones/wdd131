@@ -1,28 +1,90 @@
-// Grab the form element from the DOM, print it out
 
 const form = document.querySelector("#fsyForm");
+const travelRange = document.querySelector("#travelRange");
+const notesContainer = document.querySelector("#notesContainer");
+const notes = document.querySelector("#notes");
+const output = document.querySelector("#output");
+const campusBoxes = document.querySelectorAll('input[name="campus"]');
 
-console.log(form);
+function updateNotesField() {
+  const value = travelRange.value;
 
-// Create an event listener on the form
-// calls a function when "submit"
+  // Show the travel notes on the form if they are choosing many campuses and require it
+  if(value === "many") {
+    notesContainer.hidden = false;
+    notes.required = true;
+  } else {
+    notesContainer.hidden = true;
+    notes.required = false;
+  }
+  
+}
 
-form.addEventListener("submit", event => {
-    event.preventDefault();
-    console.log(event);
+travelRange.addEventListener("change", updateNotesField);
+updateNotesField();
 
-    const firstName = form.firstName.value;
-    console.log(firstName);
 
-    //retrieve the last name, email print to console
-    
-    const lastName = form.lastName.value;
-    console.log(lastName);
+// Ensure they choose a date later than the current date
+function isPastDate(value) {
+  const today = new Date();
+  const chosen = new Date(value);
+  return chosen < today;
+}
 
-    const campuses = form.campus;
-    console.log(campuses);
+function getSelectedCampuses() {
+  //.from converts a NodeList into a real array, so then you can use .filter and .map
+  return Array.from(campusBoxes)
+    .filter(box => box.checked)
+    .map(box => box.value); 
+}
 
-    const email = form.email.value;
-    console.log(email);
-    
-})
+form.addEventListener("submit", function (event) {
+  event.preventDefault();
+  output.textContent = "";
+
+  const firstName = form.firstName.value.trim();
+  const lastName = form.lastName.value.trim();
+  const email = form.email.value.trim();
+  const type = form.travelRange.value;
+  const availableDate = form.availableDate.value;
+  const selectedCampuses = getSelectedCampuses();
+  const note = form.notes.value.trim();
+
+  // Validate the input
+  // Let the user know to select at least one campus
+    if(type === "one" && selectedCampuses.length == 0) {
+        output.textContent = "You promised you would come to one campus. " + "Like Samson of old you have broken the covenant. Please select one campus."
+        return;
+    }
+  
+  // Let the user know if they choose many campuses but didn't put a note that they need to add a note
+    if(type === "many" && note.length == 0) {
+        output.textContent = "There has been an error. Please contact your administrator."
+        return;
+    }
+  
+  //Let the user know if they choose many campus but only had one campus selected that they need to choose at least two campuses
+    if(type === "many" && selectedCampuses.length < 2) {
+        output.textContent = "First Name does not meet requirments. Please try again"
+        return;
+    }
+
+
+  if (isPastDate(availableDate)) {
+    output.textContent = "Please choose a later date.";
+    return;
+  }
+
+  output.innerHTML = `
+  <h2>Preference Submitted</h2>
+  <p>${firstName} ${lastName}</p>
+  <p>Email: ${email}</p>
+  <p>Availability: ${availableDate}</p>
+  <p>Campuses: ${selectedCampuses.join(", ")}</p>
+  <p>Preference Level: ${type}</p>
+  `;
+
+  form.reset();
+  updateNotesField();
+});
+          
