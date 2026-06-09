@@ -6,7 +6,7 @@ const character = {
     health: 100,
     image: "snortleblat.webp",
 
-    levelUp: function() {
+    levelUp: function() { 
         this.level = this.level + 1;
         this.health = this.health +20;
         renderCharacter();
