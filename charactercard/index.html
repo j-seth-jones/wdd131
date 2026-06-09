@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Character Card</title>
+    <meta name="description" content="A Character Card that has stats allowing you to either attack or help level up the character on the card">
+    <meta name="author" content="Joshua Seth Jones">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="alligator_favicon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="card">
+        <div>
+            <img class="image" src="snortleblat.webp" alt="Picture of weird-looking Humanoid Alligator man standing thigh deep in a swamp" width="400" height="400">
+        </div>
+        <div>
+            <h1 class="name">Snortleblat</h1>
+        </div>
+        <div class="stats">
+            <p>Class: Swamp Beast Diplomat</p>
+            <p>Level: <span id="level"></span></p>
+            <p>Health: <span id="health"></span></p>
+        </div>
+        <button id="attack-btn" >Attack</button>
+        <button id="level-btn">Level Up</button>
+    </div>
+</body>
+</html>

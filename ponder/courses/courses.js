@@ -11,7 +11,7 @@ const aCourse = {
         //sectionNum represents the section the user wants to add student to
         // find that section in our array, add a student to it
         this.sections.forEach(function(section) {
-            if (section.sectionNum == sectionNum) {
+            if (section.sectionNum == sectionNum) { 
                 section.enrolled++;
             }
         });
@@ -22,7 +22,7 @@ const aCourse = {
     }
 }
     function sectionTemplate(section) {
-    return `<tr>
+    return `<tr> 
       <td>${section.sectionNum}</td>
       <td>${section.roomNum}</td>
       <td>${section.enrolled}</td>
