@@ -7,8 +7,9 @@ const character = {
     image: "snortleblat.webp",
 
     levelUp: function() {
-    this.level = this.level + 1;
-    renderCharacter();
+        this.level = this.level + 1;
+        this.health = this.health +20;
+        renderCharacter();
     },
     
     attacked: function() {
