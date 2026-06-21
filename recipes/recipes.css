@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 1rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-family: 'Amatic SC';
+    font-size: 3rem;
+    margin: 24px;
+}
+
+.site-name {
+    font-family: Amatic SC;
+    display: flex;
+    justify-content: center;
+}
+
+.recipe-book {
+    width: 90px;
+}
+
+.search-container {
+    display: flex;
+    width: 100%;
+    border: 2px solid #000;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+
+.search-container input {
+    flex: 1;
+    padding: 10px 12px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+}
+
+.search-btn {
+    background: none;
+    border: none;
+    border-left: 2px solid #00000060;
+    padding: 0 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.search-btn-img {
+    width: 24px;
+    height: auto;
+}
+
+.recipe-card {
+    border: 2px solid #000;
+    border-radius: 8px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 1rem;
+}   
+
+.apple-crisp-img {
+    width: 100%;
+    height: auto;
+    padding-right: 24px;
+}
+
+.recipe-info{
+    border-radius: 15px;
+    border: solid 1px black;
+    margin: 15px;
+    padding: 15px;
+    width: 500px;
+}
+
+.recipe-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    .recipe-title {
+        margin-top: 20px;
+    }
+}
+
+.recipe-title {
+    font-family: Amatic SC;
+    color: rgb(0, 187, 255);font-size: 2.5rem;
+}
+
+.category-tag {
+    border: 1px solid #0000006c;
+    padding: 2px 8px;
+    font-size: 15px;
+    background-color: #e6e6e6;
+}
+
+.recipe-description {
+    display: none; 
+    font-size: 15px;
+    line-height: 1.4;
+    color: #000;
+}
+
+.rating {
+    font-size: 20px;
+}
+
+.icon-star-empty {
+    font-weight: bold;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin: 20px;
+}
+
+.social img {
+    width: 35px;
+    height: 35px;
+}
+
+.flaticon-link-1 {
+    display: none;
+}
+
+.flaticon-link-2 {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (min-width: 1200px) {
+    .site-header {
+        font-size: 2.5rem;
+        align-items: end;
+    }
+
+    .recipe-book {
+        width: 130px;
+    }
+
+    .recipe-card {
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .recipe-image-wrapper {
+        flex: 1;
+    }
+
+    .recipe-content {
+        flex: 1.2;
+        gap: 14px;
+    }
+
+    .category-tag {
+        font-size: 20px;
+    }
+
+    .recipe-description {
+        display: block;
+        font-size: 18px;
+    }
+
+    .flaticon-link-1 {
+        display: block;
+        align-self: flex-start;
+        padding-right: 38rem;
+    }
+    
+    .flaticon-link-2 {
+        display: none;
+    }
+}
