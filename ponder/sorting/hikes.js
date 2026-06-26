@@ -114,7 +114,7 @@ searchButton.addEventListener("click", e => {
 
 })
 
-function sortHikedByDifficulty(a, b){
+function sortHikeByDifficulty(a, b){
     if(a.difficulty < b.difficulty){
       return -1;
     } else if (a.difficulty > b.difficulty){
