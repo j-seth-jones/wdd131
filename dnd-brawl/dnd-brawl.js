@@ -67,7 +67,6 @@ const bosses = [
 
 let currentAdventurerIndex = 0;
 let adventurerLevel = 1;
-// let randomAdventurer = Math.floor(Math.random() * adventurers.length);
 let currentAdventurer = adventurers[currentAdventurerIndex];
 let currentBossIndex = 0;
 let currentBoss = null;
