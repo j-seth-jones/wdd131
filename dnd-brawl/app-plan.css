@@ -1,0 +1,48 @@
+@font-face {
+    font-family: "Bookinsanity";
+    src: url(fonts/Bookinsanity.otf);
+}
+@font-face {
+    font-family: "BookinsanityBoldItalic";
+    src: url(fonts/BookinsanityBoldItalic.otf);
+}
+
+.logo {
+    width: 250px;
+    height: auto;
+}
+
+.primary {
+    color: #f8f3e7;
+}
+.secondary {
+    color: #8C1616;
+}
+.acccent1 {
+    color: #4A2E1B;
+}
+.accent2 {
+    color: #2B2B2B;
+}
+.accent3 {
+    color: #D49E35;
+}
+
+.headingFont {
+    font-family: "BookinsanityBoldItalic";
+}
+.paraFont {
+    font-family: "Bookinsanity";
+}
+.colored {
+    background-color: #D49E35;
+    color: #8C1616;
+}
+.wireframeImg {
+    width: 300px;
+    height: auto;
+}
+.startBtn {
+    width: 250px;
+    height: auto;
+}

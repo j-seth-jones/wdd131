@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dnd Brawl</title>
+    <meta name="description" content="A Character Card that has stats allowing the user to either attack or attempt to recruit the character on the card">
+    <meta name="author" content="Joshua Seth Jones">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="" type="image/png">
+    <link rel="stylesheet" href="dnd-brawl.css">
+    <script src="dnd-brawl.js" defer></script>
+</head>
+
+<body>
+    <header>
+    <img src="images/logo.jpg" alt="DnD Brawl Logo">
+    </header>
+    
+    <div>
+        <h1 class="userStats">User HP: <span id="userHealth">200</span></h1>
+    </div>
+    <div class="potionBar">
+        <h2 class="potionInventory">Potions: </h2>
+        <span id="potionCount"></span>
+    </div>
+    <div class="card">
+        
+        <img class="image" src="images/valeros_fighter.png" alt="Character Image" width="400" height="400">
+        
+        <h1 class="name">Valeros Stormwind</h1>
+        
+        <div class="stats">
+            <h3 class="stat1">Class: <span id="adventurer-class"> Fighter</span></h3>
+            <h3 class="stat2">Level: <span id="level"> 1</span></h3>
+            <h3 class="stat3">Health: <span id="health"> 100</span></h3>
+        </div>
+        
+        <div class="buttons">
+            <button id="attack-btn">Attack</button>
+            <button id="potion-btn">Use Potion</button>
+            <button id="recruit-btn">Attempt Recruitment</button>
+        </div>
+        <div class="buttons">
+        </div>
+    </div>
+    <div class="allyInventory">
+        <h2 class="userStats">Ally Inventory</h2>
+        <div class="allies">
+
+        </div>
+    </div>
+</body>
+</html>
