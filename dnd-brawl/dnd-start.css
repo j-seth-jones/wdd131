@@ -1,0 +1,25 @@
+
+header img {
+  display: grid;
+  justify-self: center;
+  margin: 5px;
+  margin-top: 150px;
+  border: solid;
+  border-color: #8C1616;
+  border-radius: 15px;
+  width: 450px;
+  height: auto;
+}
+
+#startBtnContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.startBtn {
+  border: solid;
+  border-color: #8C1616;
+  border-radius: 15px;
+  width: 150px;
+  height: auto;
+}

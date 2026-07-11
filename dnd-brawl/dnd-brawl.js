@@ -58,7 +58,7 @@ const bosses = [
         "image": "images/Boss-Frog.png"
     },
     {
-        "name": "I Have No Idea I'm Looking At But It Hurts",
+        "name": "I Have No Idea WTF  I'm Looking At But It Hurts",
         "creatureType": "Apparition",
         "health": 1000,
         "image": "images/Boss-Apparition.png"
@@ -241,11 +241,10 @@ function renderAlly() {
     AllyInventory.forEach(ally => {
         const allyCard = document.createElement('div');
         allyCard.classList.add("miniCard");
-        allyCard.innerHTML = `<img class="image" src="${ally.image}" alt="Character Image" width="400" height="400">
-        
-        <div class="stats">
+        allyCard.innerHTML = `<div class="stats">
             <h3 class="stat3">Health: <span id="health"> ${ally.health}</span></h3>
-        </div>`
+        </div>
+        <img class="image" src="${ally.image}" alt="Character Image" width="400" height="400">`
         div.appendChild(allyCard);
     });
     
