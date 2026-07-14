@@ -12,21 +12,21 @@ const adventurers = [
         "class": "Rogue",
         "level": 1,
         "health": 120,
-        "image": "images/lyra_rogue.png"
+        "image": "images/lyra_rogue.jpg"
     },
     {
         "name": "Eldrin the Wise",
         "class": "Wizard",
         "level": 1,
         "health": 80,
-        "image": "images/eldrin_wizard.png"
+        "image": "images/eldrin_wizard.jpg"
     },
     {
         "name": "Thorgar Ironbreaker",
         "class": "Paladin",
         "level": 1,
         "health": 140,
-        "image": "images/thorgar_paladin.png"
+        "image": "images/thorgar_paladin.jpg"
     },
     {
         "name": "Seraphina Soulweaver",
@@ -40,7 +40,7 @@ const adventurers = [
         "class": "Barbarian",
         "level": 1,
         "health": 200,
-        "image": "images/korrak_barbarian.png"
+        "image": "images/korrak_barbarian.jpg"
     }
 ];
 
@@ -254,7 +254,7 @@ function renderPotions() {
     document.getElementById("potionCount").innerHTML = ""
     for (let i = 0; i < potions; i++) {
         const potionImg = document.createElement("img");
-        potionImg.src = "images/health-potion-img.png";
+        potionImg.src = "images/health-potion-img.jpg";
         document.getElementById("potionCount").appendChild(potionImg);
     }
 }
