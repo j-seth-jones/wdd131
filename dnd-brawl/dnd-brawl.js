@@ -203,7 +203,7 @@ function drinkPotion() {
         currentUserHealth += 50;
         renderPlayer();
     } else {
-        alert("Umm... You're out of potions... Suck it.")
+        alert("Umm... You're out of potions...")
     }
     renderPotions();
 }
@@ -254,7 +254,7 @@ function renderPotions() {
     document.getElementById("potionCount").innerHTML = ""
     for (let i = 0; i < potions; i++) {
         const potionImg = document.createElement("img");
-        potionImg.src = "images/health-potion-img.jpg";
+        potionImg.src = "images/health-potion-img.png";
         document.getElementById("potionCount").appendChild(potionImg);
     }
 }

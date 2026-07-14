@@ -67,7 +67,7 @@ body {
 
 /* Character Card */
 .card {
-  background-image: url(images/wood-background.jpg);
+  background-image: url(images/wood-background.png);
   border: solid;
   border-radius: 15px;
   box-shadow: 0 8px 16px rgba(0,0,0,0.9);
@@ -90,7 +90,7 @@ body {
   color: #8C1616;
   padding: 5px;
   background-color: #D49E35;
-  background-image: url(images/gold-shine.jpg);
+  background-image: url(images/gold-shine.png);
 }
 
 .stats {
