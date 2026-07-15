@@ -33,7 +33,7 @@ const adventurers = [
         "class": "Cleric",
         "level": 1,
         "health": 160,
-        "image": "images/seraphina_cleric.png"
+        "image": "images/seraphina_cleric.jpg"
     },
     {
         "name": "Korrak Bloodrage",
