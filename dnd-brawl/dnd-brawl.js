@@ -5,42 +5,42 @@ const adventurers = [
         "class": "Fighter",
         "level": 1,
         "health": 100,
-        "image": "images/valeros_fighter.png"
+        "image": "images/valeros_fighter.webp"
     },
     {
         "name": "Lyra Whisperwind",
         "class": "Rogue",
         "level": 1,
         "health": 120,
-        "image": "images/lyra_rogue.jpg"
+        "image": "images/lyra_rogue.webp"
     },
     {
         "name": "Eldrin the Wise",
         "class": "Wizard",
         "level": 1,
         "health": 80,
-        "image": "images/eldrin_wizard.jpg"
+        "image": "images/eldrin_wizard.webp"
     },
     {
         "name": "Thorgar Ironbreaker",
         "class": "Paladin",
         "level": 1,
         "health": 140,
-        "image": "images/thorgar_paladin.jpg"
+        "image": "images/thorgar_paladin.webp"
     },
     {
         "name": "Seraphina Soulweaver",
         "class": "Cleric",
         "level": 1,
         "health": 160,
-        "image": "images/seraphina_cleric.jpg"
+        "image": "images/seraphina_cleric.webp"
     },
     {
         "name": "Korrak Bloodrage",
         "class": "Barbarian",
         "level": 1,
         "health": 200,
-        "image": "images/korrak_barbarian.jpg"
+        "image": "images/korrak_barbarian.webp"
     }
 ];
 
@@ -49,19 +49,19 @@ const bosses = [
         "name": "Billy the Lich",
         "creatureType": "Lich",
         "health": 1000,
-        "image": "images/Boss-Lich.png"
+        "image": "images/Boss-Lich.webp"
     },
     {
         "name": "Grolnok",
         "creatureType": "Giant Frog Monster",
         "health": 1000,
-        "image": "images/Boss-Frog.png"
+        "image": "images/Boss-Frog.webp"
     },
     {
         "name": "I Have No Idea WTF  I'm Looking At But It Hurts",
         "creatureType": "Apparition",
         "health": 1000,
-        "image": "images/Boss-Apparition.png"
+        "image": "images/Boss-Apparition.webp"
     }
 ]
 
