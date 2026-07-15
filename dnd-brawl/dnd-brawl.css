@@ -1,10 +1,12 @@
 @font-face {
     font-family: "Bookinsanity";
     src: url(fonts/Bookinsanity.otf);
+    font-display: swap;
 }
 @font-face {
     font-family: "BookinsanityBoldItalic";
     src: url(fonts/BookinsanityBoldItalic.otf);
+    font-display: swap;
 }
 
 * {
@@ -20,7 +22,7 @@ header img {
 
 body {
   font-family: "Bookinsanity";
-  background-image: url(images/mapBackground.png);
+  background-image: url(images/mapBackground.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
