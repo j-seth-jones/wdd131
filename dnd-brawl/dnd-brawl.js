@@ -255,6 +255,7 @@ function renderPotions() {
     for (let i = 0; i < potions; i++) {
         const potionImg = document.createElement("img");
         potionImg.src = "images/health-potion-img.jpg";
+        potionImg.alt = "Image of Potion bottle for health increase"
         document.getElementById("potionCount").appendChild(potionImg);
     }
 }

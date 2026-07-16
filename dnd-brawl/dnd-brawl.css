@@ -37,7 +37,7 @@ body {
   margin-top: 30px;
   padding: 10px;
   gap: 5px;
-  border: solid #8C1616;
+  border: solid #790000;
   border-radius: 15px;
   background-color: #f8f3e7;
 }
@@ -53,7 +53,7 @@ body {
   width: 350px;
   height: 50px;
   gap: 10px;
-  border: solid #8C1616;
+  border: solid #790000;
   border-radius: 15px;
   background-color: #f8f3e7;
 }
@@ -89,9 +89,9 @@ body {
   font-size: 20px;
   font-weight: bold;
   margin: -4px 0 10px 0;
-  color: #8C1616;
+  color: #790000;
   padding: 5px;
-  background-color: #D49E35;
+  background-color: #FFCB64;
   background-image: url(images/gold-shine.png);
 }
 
@@ -102,7 +102,7 @@ body {
   margin: 0px 15px 7px 15px;
   border-radius: 15px;
   background-color: #2B2B2B;
-  border: solid #D49E35;
+  border: solid #FFCB64;
 }
 .stat1 {
   grid-column: 2 / 2;
@@ -118,7 +118,7 @@ body {
   justify-self: center;
   text-align: center;
   margin: 5px 0;
-  color: #D49E35;
+  color: #FFCB64;
 }
 
 .buttons {
@@ -131,12 +131,12 @@ body {
 button {
   padding: 5px;
   margin: 5px 5px 5px 5px;
-  font-size: 12px;
+  font-size: 15px;
   border: solid;
   border-color: #2B2B2B;
   border-radius: 8px;
-  background-color: #8C1616;
-  color: #D49E35;
+  background-color: #790000;
+  color: #FFCB64;
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.5s ease;
@@ -168,7 +168,7 @@ button:hover {
 }
 .startBtn {
   border: solid;
-  border-color: #8C1616;
+  border-color: #790000;
   border-radius: 15px;
   width: 250px;
   height: auto;
@@ -184,7 +184,7 @@ button:hover {
 .miniCard {
   width: 105px;
   border: solid;
-  background-color: #8C1616;
+  background-color: #790000;
   border-radius: 15px;
 }
 .miniCard img {
@@ -198,7 +198,7 @@ button:hover {
   width: 100px;
   margin: 5px 0;
   border-color: #2B2B2B;
-  color: #D49E35;
+  color: #FFCB64;
 }
 
 @media screen and (min-width: 1200px) {
@@ -267,7 +267,7 @@ button:hover {
     justify-self: center;
     text-align: center;
     margin: 5px 0;
-    color: #D49E35;
+    color: #FFCB64;
   }
 
   .buttons {
@@ -284,8 +284,8 @@ button:hover {
     border: solid;
     border-color: #2B2B2B;
     border-radius: 8px;
-    background-color: #8C1616;
-    color: #D49E35;
+    background-color: #790000;
+    color: #FFCB64;
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.5s ease;
