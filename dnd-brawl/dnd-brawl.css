@@ -103,6 +103,10 @@ body {
   border-radius: 15px;
   background-color: #2B2B2B;
   border: solid #FFCB64;
+  justify-self: center;
+  text-align: center;
+  margin: 5px 0;
+  color: #FFCB64;
 }
 .stat1 {
   grid-column: 2 / 2;
@@ -112,13 +116,6 @@ body {
 }
 .stat3 {
   grid-column: 2 / 2;
-}
-
-.stats h4 {
-  justify-self: center;
-  text-align: center;
-  margin: 5px 0;
-  color: #FFCB64;
 }
 
 .buttons {
